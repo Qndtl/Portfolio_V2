@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/mobileHeader.css">
+  <link rel="stylesheet" href="css/project.css">
+  <title>LoL Record</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1><a href="index.html">PORTFOLIO</a></h1>
+      <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+      </svg>
+      <ul>
+        <li class="contact-li"><a href="lol.html">LOL</a></li>
+        <li class="about-li"><a href="fourtop.html">Four Top</a></li>
+        <li class="projects-li"><a href="coin.html">Coin Chart</a></li>
+        <li class="contact-li"><a href="insta.html">Instaclone</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="mobile-nav no-show">
+    <svg class="times" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path
+        d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+    </svg>
+    <span class="list"><a href="lol.html">LOL</a></span>
+    <span class="list"><a href="fourtop.html">Four Top</a></span>
+    <span class="list"><a href="coin.html">Coin Chart</a></span>
+    <span class="list"><a href="insta.html">Instaclone</a></span>
+  </nav>
+
+  <div class="container">
+    <div class="title">Simple Posting</div>
+    <img class="projectImg" src="/images/projectImg/simpleposting/login.JPG" text="Simple Posting" />
+    <div class="text-container">
+      <div class="text-title">Intro</div>
+      <div class="text">간단한 텍스트 게시물을 올리고 좋아요, 댓글 기능이 있는 프로젝트이다.</div>
+      <div class="text">이 프로젝트는 MongoDB, Express, React, GraphQL, Apollo Server를 사용하였다.</div>
+      <div class="text">Login은 passport, jsonwebtoken을 사용하였다.</div>
+    </div>
+    <img class="projectImg" src="/images/projectImg/simpleposting/signup.JPG" text="Sign Up" />
+    <div class="text-container">
+      <div class="text-title">User</div>
+      <div class="text">Sign up은 email과 username을 입력하고나면 MongoDB에 사용자가 등록이 된다.</div>
+      <div class="text">등록된 이메일로 로그인을 시도하면 User에 loginSecret을 생성하고 등록된 이메일에 mailgun을 사용하여 loginSecret을 보낸다.</div>
+      <div class="text">loginSecret을 복사하여 로그인이 완료되면 localstorage에 json web token이 저장되어 로그인을 유지한다.</div>
+    </div>
+    <img class="projectImg" src="/images/projectImg/simpleposting/token.JPG" text="JWT" />
+    <div class="text-container">
+      <div class="text-title">Upload</div>
+      <div class="text">Add Post 버튼을 누르면 작성할 수 있도록 modal 창이 뜬다.</div>
+      <div class="text">@apollo/client의 useMutation을 사용하여 Post를 등록한다.</div>
+      <div class="text">등록한 Post에 Like, Comment, Update, Delete 버튼이 존재하는데 로그인한 자신의 것에만 Update, Delete버튼이 존재한다.</div>
+    </div>
+    <img class="projectImg" src="/images/projectImg/simpleposting/upload.JPG" text="Upload" />
+    <div class="text-container">
+      <div class="text-title">Comment & Like</div>
+      <div class="text">말풍선 버튼을 누르면 Comment들과 새로운 Comment를 작성할 수 있도록 modal 창이 뜬다.</div>
+      <div class="text">Comment는 useMutation을 사용하여 등록한다.</div>
+      <div class="text">Like는 Post의 id와 Like를 누른 User의 id가 존재하는 경우 Like를 삭제하고, 없는 경우에는 생성하여 Like 여부를 useQuery로 불러와 Like
+        상태를
+        보여준다.</div>
+    </div>
+    <img class="projectImg" src="/images/projectImg/simpleposting/comment.JPG" text="Comment" />
+    <div class="git-link">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+        <path
+          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+      </svg>
+      <span>Github Link</span>
+      <a href="https://github.com/hyunduk-jo/merng-stack/tree/main/server">SERVER</a>
+      <span>/</span>
+      <a href="https://github.com/hyunduk-jo/merng-stack/tree/main/client">CLIENT</a>
+    </div>
+  </div>
+
+  <script src="js/header.js"></script>
+</body>
+
+</html>

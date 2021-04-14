@@ -19,11 +19,11 @@ const projects = document.getElementById('projects');
 const contact = document.getElementById('contact');
 
 aboutLi.addEventListener("click", () => {
-  window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
 })
 projectsLi.addEventListener("click", () => {
-  window.scrollTo({ top: projects.offsetTop - 60, left: 0, behavior: 'auto' })
+  window.scrollTo({ top: projects.offsetTop - 60, left: 0, behavior: 'smooth' })
 })
 contactLi.addEventListener("click", () => {
-  window.scrollTo({ top: contact.offsetTop, left: 0, behavior: 'auto' })
+  window.scrollTo({ top: contact.offsetTop - 60, left: 0, behavior: 'smooth' })
 })

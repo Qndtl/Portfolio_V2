@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/mobileHeader.css">
+  <link rel="stylesheet" href="css/project.css">
+  <title>Project | 4TOP</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1><a href="index.html">PORTFOLIO</a></h1>
+      <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+      </svg>
+      <ul>
+        <li class="about-li"><a href="lol.html">LOL</a></li>
+        <li class="projects-li"><a href="coin.html">Coin Chart</a></li>
+        <li class="contact-li"><a href="insta.html">Instaclone</a></li>
+        <li class="contact-li"><a href="simplepost.html">Simple Post</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="mobile-nav no-show">
+    <svg class="times" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path
+        d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+    </svg>
+    <span class="list"><a href="lol.html">LOL</a></span>
+    <span class="list"><a href="coin.html">Coin Chart</a></span>
+    <span class="list"><a href="insta.html">Instaclone</a></span>
+    <span class="list"><a href="simplepost.html">Simple Post</a></span>
+  </nav>
+
+  <div class="container">
+    <div class="title">Four Top</div>
+    <img class="projectImg"
+      src="https://github.com/Qndtl/Portfolio/blob/master/public/projectImg/fourtop/4tophome.PNG?raw=true" />
+    <div class="text-container">
+      <div class="text-title">
+        Intro
+      </div>
+      <div class="text">3D 프린터 커뮤니티 및 렌탈 서비스를 하는 프로젝트이다.</div>
+      <div class="text">Frontend는 React를 사용하였고 Backend는 Prisma2를 사용하였다.</div>
+    </div>
+    <div class="text-container">
+      <div class="text-title">Login</div>
+      <div class="text">로그인은 json web token을 사용하여 localStorage에 토큰을 저장하는 방식을 사용하였다.</div>
+      <div class="text">로그인은 아이디와 비밀번호를 이용하고 bcrypt를 이용하여 비밀번호를 저장하였다.</div>
+      <div class="text">로그인에 성공을 하면 jwt 토큰을 보내주어 localStorage에 저장을 하고 redux의 state도 변경해준다.</div>
+      <div class="text">Redux는 아직 배우고 있어 redux-persist를 이용하여 로그인 상태를 유지해 주었다.</div>
+    </div>
+    <img class="projectImg"
+      src="https://github.com/Qndtl/Portfolio/blob/master/public/projectImg/fourtop/4toplocalhost.PNG?raw=true" />
+    <div class="text-container">
+      <div class="text-title">Gallery</div>
+      <div class="text">이달의 무료 작품은 좋아요 많은 순 5명만 보여준다.</div>
+      <div class="text">이달의 유료 작품은 준비중입니다.</div>
+      <div class="text">이달의 크리에이터는 좋아요, 댓글 많은 순 5명만 보여준다.</div>
+    </div>
+    <img class="projectImg"
+      src="https://github.com/Qndtl/Portfolio/blob/master/public/projectImg/fourtop/4topgallery.PNG?raw=true" />
+    <div class="text-container">
+      <div class="text-title">Company</div>
+      <div class="text">useState를 사용하여 소개, 인사말, 비젼 & 미션, 연혁 탭을 클릭하면 각각의 컴포넌트를 보여준다.</div>
+    </div>
+    <img class="projectImg"
+      src="https://github.com/Qndtl/Portfolio/blob/master/public/projectImg/fourtop/4topcompany.PNG?raw=true" />
+    <div class="text-container">
+      <div class="text-title">Upload</div>
+      <div class="text">사진은 AWS S3에 저장을 하고 Prisma의 Post에는 AWS S3에 저장되어있는 사진의 url이 저장되어있다 &#40;multer, multer-s3사용&#41;
+      </div>
+      <div class="text">이미지 파일을 선택하면 선택한 이미지 파일을 미리보여준다.</div>
+    </div>
+    <img class="projectImg"
+      src="https://github.com/Qndtl/Portfolio/blob/master/public/projectImg/fourtop/4topupload.PNG?raw=true" />
+    <div class="text-container">
+      <div class="text-title">Profile</div>
+      <div class="text">사용자의 게시물 수, 팔로워 수, 팔로잉 수 등을 볼 수 있다.</div>
+      <div class="text">프로필이 자신인 경우에는 edit profile이 보여 프로필 변경이 가능하다.</div>
+      <div class="text">팔로워와 팔로우를 누르면 팔로워와 팔로우하는 사용자들을 오른쪽에 보이도록 하였다.</div>
+    </div>
+    <img class="projectImg"
+      src="https://github.com/Qndtl/Portfolio/blob/master/public/projectImg/fourtop/4topprofile.PNG?raw=true" />
+    <div class="git-link">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+        <path
+          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+      </svg>
+      <span>Github Link</span>
+      <a href="https://github.com/Qndtl/Printer-back">SERVER</a>
+      <span>/</span>
+      <a href="https://github.com/Qndtl/Printer-Front">CLIENT</a>
+      <span>/</span>
+      <a href="https://4top.netlify.com">DEPLOY LINK</a>
+    </div>
+  </div>
+
+  <script src="js/header.js"></script>
+</body>
+
+</html>

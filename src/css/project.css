@@ -1,0 +1,84 @@
+.container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  background-color: #FDFDFD;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60%;
+  margin: 50px 0px;
+  border-bottom: 12px solid rgba(247, 129, 191, 0.7);
+}
+
+.projectImg {
+  object-fit: contain;
+  background-color: #DCDCDC;
+  width: 50%;
+}
+
+.text-container{
+  width: 55%;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.text-container a {
+  color: blue;
+}
+
+.text-title {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+.text {
+  font-size: 1em;
+  margin-left: 40px;
+  line-height: 200%;
+}
+
+.git-link {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.git-link span{
+  margin: 0px 20px;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.git-link svg{
+  fill: black;
+}
+
+.git-link a{
+  font-size: 2.5em;
+  font-weight: 600;
+  color: skyblue;
+}
+
+@media screen and (max-width: 768px){
+  .projectImg{
+    width: 90%;
+  }
+  .text-container {
+    width: 90%;
+    font-size: 14px;
+  }
+  .git-link {
+    font-size: 7px;
+  }
+  .git-link span{
+    margin: 0px 10px;
+  }
+}

@@ -27,4 +27,13 @@
   #about p {
     font-size: 1rem;
   }
+  .project {
+    margin: 30px 0px;
+    width: 95%;
+    height: 180px;
+  }
+
+  .project:hover {
+    transform: none;
+  }
 }
