@@ -1,0 +1,30 @@
+@media screen and (min-width: 1200px){
+  .container {
+    max-width: 1520px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  header {
+    margin-bottom: none;
+  }
+  .hamburger {
+    display: block;
+    right: 20px;
+  }
+  .navbar {
+    padding: 0px 20px;
+  }
+  ul {
+    display: none;
+  }
+  .container {
+    min-width: 0px;
+  }
+  .in {
+    font-size: 2rem;
+  }
+  #about p {
+    font-size: 1rem;
+  }
+}
