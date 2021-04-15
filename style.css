@@ -291,31 +291,31 @@ li:hover {
 }
 
 .card:first-child {
-  background-image: url("/images/projectImg/lolrecord/firstpage.jpg");
+  background-image: url("images/projectImg/lolrecord/firstpage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .card:nth-child(2) {
-  background-image: url("/images/projectImg/fourtop/4tophome.png");
+  background-image: url("images/projectImg/fourtop/4tophome.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .card:nth-child(3) {
-  background-image: url("/images/projectImg/coinchart/search.JPG");
+  background-image: url("images/projectImg/coinchart/search.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .card:nth-child(4) {
-  background-image: url("/images/projectImg/insta_clone.JPG");
+  background-image: url("images/projectImg/insta_clone.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .card:last-child {
-  background-image: url("/images/projectImg/SP_auth.JPG");
+  background-image: url("images/projectImg/SP_auth.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
