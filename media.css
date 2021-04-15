@@ -76,23 +76,27 @@
     margin-top: 20px;
   }
   .email span {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 600;
   }
   .github span {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 600;
   }
   .email svg {
-    margin-right: 30px;
+    margin-right: 20px;
+    width: 32px;
+    height: 32px;
   }
   .github svg {
-    margin-right: 30px;
+    margin-right: 20px;
+    width: 32px;
+    height: 32px;
   }
   .email {
-    width: 75%;
+    width: 80%;
   }
   .github {
-    width: 75%;
+    width: 80%;
   }
 }

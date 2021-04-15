@@ -291,13 +291,13 @@ li:hover {
 }
 
 .card:first-child {
-  background-image: url("https://github.com/Qndtl/Portfolio_V2/blob/master/images/projectImg/lolrecord/firstpage.JPG?raw=true");
+  background-image: url("images/projectImg/lolrecord/firstpage.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .card:nth-child(2) {
-  background-image: url("https://github.com/Qndtl/Portfolio_V2/blob/master/images/projectImg/lolrecord/firstpage.JPG?raw=true");
+  background-image: url("images/projectImg/fourtop/4tophome.PNG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
