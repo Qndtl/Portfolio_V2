@@ -24,16 +24,75 @@
   .in {
     font-size: 2rem;
   }
+  .skill-img {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  .css {
+    top: 35%;
+  }
+  .graphql {
+    top: 40%;
+    left: 8%;
+  }
+  .html {
+    top: 65%;
+  }
+  .passport {
+    display: none;
+  }
+  .react {
+    top: 73%;
+    left: 25%;
+  }
+  .mongodb {
+    top: 80%;
+    right: 5%;
+  }
+  .javascript {
+    top: 88%;
+  }
+  .redux {
+    top: 12%;
+  }
   #about p {
     font-size: 1rem;
   }
-  .project {
+  .card {
     margin: 30px 0px;
     width: 95%;
     height: 180px;
   }
 
-  .project:hover {
+  .card:hover {
     transform: none;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .contact-link__container {
+    width: 90%;
+    min-height: 180px;
+    margin-top: 20px;
+  }
+  .email span {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .github span {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .email svg {
+    margin-right: 20px;
+  }
+  .github svg {
+    margin-right: 20px;
+  }
+  .email {
+    width: 95%;
+  }
+  .github {
+    width: 95%;
   }
 }
