@@ -5,24 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/mobileHeader.css">
-  <link rel="stylesheet" href="css/project.css">
-  <link rel="shortcut icon" href="/images/fav.ico">
-  <link rel="icon" href="/images/fav.ico">
-  <title>LoL Record</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="mobileHeader.css">
+  <link rel="stylesheet" href="project.css">
+  <link rel="shortcut icon" href="images/fav.ico">
+  <link rel="icon" href="images/fav.ico">
+  <title>Project | LoL Record</title>
 </head>
 
 <body>
   <header>
     <nav class="navbar">
-      <h1><a href="/index.html">PORTFOLIO</a></h1>
+      <h1><a href="index.html">PORTFOLIO</a></h1>
       <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
       </svg>
       <ul>
         <li class="about-li"><a href="fourtop.html">Four Top</a></li>
-        <li class="projects-li"><a href="lol.html">LOL</a></li>
+        <li class="projects-li"><a href="coin.html">Coin Chart</a></li>
         <li class="contact-li"><a href="insta.html">Instaclone</a></li>
         <li class="contact-li"><a href="simplepost.html">Simple Post</a></li>
       </ul>
@@ -33,78 +33,87 @@
       <path
         d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
     </svg>
-    <span class="list"><a href="lol.html">LOL</a></span>
     <span class="list"><a href="fourtop.html">Four Top</a></span>
+    <span class="list"><a href="coin.html">Coin Chart</a></span>
     <span class="list"><a href="insta.html">Instaclone</a></span>
     <span class="list"><a href="simplepost.html">Simple Post</a></span>
   </nav>
 
   <div class="container">
-    <div class="title">Coin Price Chart</div>
+    <div class="title">LOL Record</div>
     <a style="text-decoration: underline; color: blue; font-weight: 600; margin-bottom: 50px;"
-      href="https://hyunduk-jo.github.io/coin-chart">
+      href="https://lol-record.netlify.com">
       사이트 구경하기
     </a>
-    <img class="projectImg" src='/images/projectImg/coin_main.JPG' text="코인 차트 첫 화면" />
+    <img class="projectImg" src='images/projectImg/lolrecord/firstpage.JPG' />
     <div class="text-container">
       <div class="text-title">
         Intro
       </div>
-      <div class="text">Coingecko에서 제공하는 API를 이용하여 axios로 데이터를 받아오고 코인의 정보를 보여주는 React 프로젝트이다.</div>
+      <div class="text">리그 오브 레전드 전적 검색기로 소환사명으로 검색하여 최근 100 게임의 결과를 보여준다.</div>
     </div>
     <div class="text-container">
       <div class="text-title">
         Getting API
       </div>
       <div class="text">
-        <a href="https://www.coingecko.com/en/api#explore-api">https://www.coingecko.com/en/api#explore-api</a>에서 따로 로그인
-        없이 api를 사용할 수 있다.
+        소환사 이름으로 검색하여 소환사의 최근 100게임의 결과를 보여주기 위해서는
+        <a href="https://developer.riotgames.com/">https://developer.riotgames.com/</a>
+        에 로그인 후 API key를 발급받아야 한다.
       </div>
       <div class="text">
-        Axios를 이용하여 코인의 정보를 가져온다.
+        Axios를 이용하여 소환사의 정보를 가져온다.
       </div>
     </div>
-    <img class="projectImg" src='/images/projectImg/coinchart/coingecko.JPG' text="Coin Gecko API" />
+    <img class="projectImg" src='images/projectImg/lolrecord/developerpage.JPG' />
     <div class="text-container">
       <div class="text-title">
         Using API
       </div>
       <div class="text">
-        Getting API에서 axios를 통해 가져온 코인들의 정보를 이용하여 코인의 이미지, market_cap, 현재 가격 등을 표에 표시해준다.
+        Getting API에서 axios를 통해 가져온 소환사의 정보를 이용하여 Riot Games 에서 제공하는 API를 이용해 게임에 대한 기록들을 가져온다.
       </div>
       <div class="text">
-        검색 창에 코인의 이름을 입력하면 코인이 있으면 axios로 정보를 가져오고, 코인이 없으면 coin not found를 출력해준다.
+        League에서는 소환사 정보중 encryptedSummonerId를 이용하여 솔로 랭크와 팀 랭크에 대한 정보를 가져온다.
+      </div>
+      <div class="text">
+        Match에서 최근 100게임의 gameId와 자신이 사용한 championId 등을 가져온다.
+      </div>
+      <div class="text">
+        위에서 가져온 gameId를 이용하여 각각의 게임에 대한 통계를 가져온다.
       </div>
     </div>
-    <img class="projectImg" src='/images/projectImg/coinchart/search.JPG' text="코인 검색 결과" />
+    <img class="projectImg" src='images/projectImg/lolrecord/apipage.JPG' />
     <div class="text-container">
       <div class="text-title">
         Result
       </div>
       <div class="text">
-        코인을 클릭하면 코인에 대한 차트와 설명을 볼 수 있다.
+        랭크 및 아이콘과 각 게임에서 사용한 아이템, 챔피언 등의 이미지를 가져온다.
       </div>
       <div class="text">
-        select 태그를 이용하여 1일부터 3년까지의 차트를 볼 수 있도록 하였다.
+        각 게임에 대한 정보와 아이템, 챔피언, 참가자 등을 불러온 이미지와 매칭하여 결과로 나타내준다.
       </div>
       <div class="text">
-        코인 차트는 Chart JS를 사용하였다.
+        게임 결과에 따라 승리시 붉은색으로 나타내고 패배시 푸른색으로 나타내준다.
       </div>
     </div>
-    <img class="projectImg" src='/images/projectImg/coinchart/detail.png' text="코인 상세 화면" />
+    <img class="projectImg" src='images/projectImg/lolrecord/searched.JPG' />
     <div class="git-link">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
         <path
           d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
       </svg>
       <span>Github Link</span>
-      <a href="https://github.com/hyunduk-jo/coin-chart">CLIENT</a>
+      <a href="https://github.com/hyunduk-jo/lol-record-server">SERVER</a>
       <span>/</span>
-      <a href="https://hyunduk-jo.github.io/coin-chart">DEPLOY LINK</a>
+      <a href="https://github.com/hyunduk-jo/lol-record-client">CLIENT</a>
+      <span>/</span>
+      <a href="https://lol-record.netlify.com">DEPLOY LINK</a>
     </div>
   </div>
 
-  <script src="js/header.js"></script>
+  <script src="header.js"></script>
 </body>
 
 </html>

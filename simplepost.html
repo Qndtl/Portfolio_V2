@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/mobileHeader.css">
-  <link rel="stylesheet" href="css/project.css">
-  <link rel="shortcut icon" href="/images/fav.ico">
-  <link rel="icon" href="/images/fav.ico">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="mobileHeader.css">
+  <link rel="stylesheet" href="project.css">
+  <link rel="shortcut icon" href="images/fav.ico">
+  <link rel="icon" href="images/fav.ico">
   <title>LoL Record</title>
 </head>
 
 <body>
   <header>
     <nav class="navbar">
-      <h1><a href="/index.html">PORTFOLIO</a></h1>
+      <h1><a href="index.html">PORTFOLIO</a></h1>
       <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
       </svg>
@@ -41,28 +41,28 @@
 
   <div class="container">
     <div class="title">Simple Posting</div>
-    <img class="projectImg" src="/images/projectImg/simpleposting/login.JPG" text="Simple Posting" />
+    <img class="projectImg" src="images/projectImg/simpleposting/login.JPG" text="Simple Posting" />
     <div class="text-container">
       <div class="text-title">Intro</div>
       <div class="text">간단한 텍스트 게시물을 올리고 좋아요, 댓글 기능이 있는 프로젝트이다.</div>
       <div class="text">이 프로젝트는 MongoDB, Express, React, GraphQL, Apollo Server를 사용하였다.</div>
       <div class="text">Login은 passport, jsonwebtoken을 사용하였다.</div>
     </div>
-    <img class="projectImg" src="/images/projectImg/simpleposting/signup.JPG" text="Sign Up" />
+    <img class="projectImg" src="images/projectImg/simpleposting/signup.JPG" text="Sign Up" />
     <div class="text-container">
       <div class="text-title">User</div>
       <div class="text">Sign up은 email과 username을 입력하고나면 MongoDB에 사용자가 등록이 된다.</div>
       <div class="text">등록된 이메일로 로그인을 시도하면 User에 loginSecret을 생성하고 등록된 이메일에 mailgun을 사용하여 loginSecret을 보낸다.</div>
       <div class="text">loginSecret을 복사하여 로그인이 완료되면 localstorage에 json web token이 저장되어 로그인을 유지한다.</div>
     </div>
-    <img class="projectImg" src="/images/projectImg/simpleposting/token.JPG" text="JWT" />
+    <img class="projectImg" src="images/projectImg/simpleposting/token.JPG" text="JWT" />
     <div class="text-container">
       <div class="text-title">Upload</div>
       <div class="text">Add Post 버튼을 누르면 작성할 수 있도록 modal 창이 뜬다.</div>
       <div class="text">@apollo/client의 useMutation을 사용하여 Post를 등록한다.</div>
       <div class="text">등록한 Post에 Like, Comment, Update, Delete 버튼이 존재하는데 로그인한 자신의 것에만 Update, Delete버튼이 존재한다.</div>
     </div>
-    <img class="projectImg" src="/images/projectImg/simpleposting/upload.JPG" text="Upload" />
+    <img class="projectImg" src="images/projectImg/simpleposting/upload.JPG" text="Upload" />
     <div class="text-container">
       <div class="text-title">Comment & Like</div>
       <div class="text">말풍선 버튼을 누르면 Comment들과 새로운 Comment를 작성할 수 있도록 modal 창이 뜬다.</div>
@@ -71,7 +71,7 @@
         상태를
         보여준다.</div>
     </div>
-    <img class="projectImg" src="/images/projectImg/simpleposting/comment.JPG" text="Comment" />
+    <img class="projectImg" src="images/projectImg/simpleposting/comment.JPG" text="Comment" />
     <div class="git-link">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
         <path
@@ -84,7 +84,7 @@
     </div>
   </div>
 
-  <script src="js/header.js"></script>
+  <script src="header.js"></script>
 </body>
 
 </html>
