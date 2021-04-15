@@ -61,7 +61,7 @@
   .card {
     margin: 30px 0px;
     width: 95%;
-    height: 180px;
+    height: 210px;
   }
 
   .card:hover {
@@ -84,15 +84,15 @@
     font-weight: 600;
   }
   .email svg {
-    margin-right: 20px;
+    margin-right: 30px;
   }
   .github svg {
-    margin-right: 20px;
+    margin-right: 30px;
   }
   .email {
-    width: 95%;
+    width: 75%;
   }
   .github {
-    width: 95%;
+    width: 75%;
   }
 }
