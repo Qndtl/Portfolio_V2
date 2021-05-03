@@ -9,7 +9,7 @@ body {
 
 header {
   height: 60px;
-  border-bottom: 1px solid black;
+  box-shadow: 0px 1px 3px gray;
   position: sticky;
   background-color: white;
   top: 0;
@@ -297,25 +297,25 @@ li:hover {
   background-position: center;
 }
 .card:nth-child(2) {
-  background-image: url("images/projectImg/fourtop/4tophome.PNG");
+  background-image: url("images/projectImg/duktube/duktube_home.PNG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .card:nth-child(3) {
-  background-image: url("images/projectImg/coinchart/search.JPG");
+  background-image: url("images/projectImg/fourtop/4tophome.PNG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .card:nth-child(4) {
-  background-image: url("images/projectImg/insta_clone.JPG");
+  background-image: url("images/projectImg/coinchart/search.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .card:last-child {
-  background-image: url("images/projectImg/SP_auth.JPG");
+  background-image: url("images/projectImg/insta_clone.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
